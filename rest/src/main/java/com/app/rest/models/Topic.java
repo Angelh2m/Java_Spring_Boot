@@ -1,9 +1,19 @@
 package com.app.rest.models;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Topic {
-    private String name;
+
+    @Id
     private String id;
+    private String name;
     private String description;
+
+    public Topic() {
+
+    }
 
     public Topic(String name, String id, String description) {
         this.name = name;
